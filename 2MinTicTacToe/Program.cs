@@ -20,4 +20,14 @@ namespace _2MinTicTacToe
         }
     }
 
+    public class Spot
+    {
+        public int Row{ get; }
+
+        public Spot(int row)
+        {
+            Row= row;
+        }
+    }
+
 }
