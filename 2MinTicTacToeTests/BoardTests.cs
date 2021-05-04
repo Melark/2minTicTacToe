@@ -33,5 +33,12 @@ namespace _2MinTicTacToeTests
             var spot = new Spot(0, 1);
             Assert.True(spot.Column == 1);
         }
+
+        [Fact]
+        public void BoardIsValidMove_FlaseWhenEmpty()
+        {
+            var board = new Board();
+            Assert.False(board.IsValidMove());
+        } 
     }
 }

@@ -19,6 +19,8 @@ namespace _2MinTicTacToe
             Spots = new Spot[9];
         }
 
+        public bool IsValidMove() { return false;  }
+
     }
 
     public class Spot
