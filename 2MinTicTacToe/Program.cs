@@ -14,19 +14,22 @@ namespace _2MinTicTacToe
 
     public class Board
     {
-        public string[] Spots { get;  }
+        public Spot[] Spots { get;  }
         public Board() {
-            Spots = new string[0];
+            Spots = new Spot[9];
         }
+
     }
 
     public class Spot
     {
         public int Row{ get; }
+        public int Column { get; }
 
-        public Spot(int row)
+        public Spot(int row, int column)
         {
             Row= row;
+            Column = column;
         }
     }
 
